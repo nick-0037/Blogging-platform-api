@@ -1,0 +1,9 @@
+POST http://localhost:3000/posts
+Content-Type: application/json 
+
+{
+  "title": "My first post",
+  "content": "This is content of my first post",
+  "category": "Technology",
+  "tags": ["JavaScript", "Node.js", "REST API"]
+}
