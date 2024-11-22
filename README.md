@@ -1,6 +1,7 @@
 # Blogging Platform API
 
 This application is a RESTful API built with Express and MySQL to manage a system of posts. It allows users to interact with the database through various endpoints, which enable CRUD (Create, Read, Update, and Delete) operations on posts.
+https://roadmap.sh/projects/blogging-platform-api
 
 ## Features
 
