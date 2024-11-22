@@ -75,6 +75,33 @@ Response: Returns the created post with a unique ID, creation date, and updated 
     }
   ]
   ```
+### 3. Search Posts (GET /posts/search)
+
+- Description: The API allows users to search for posts based on a search term, which can match part of the title, content, or category. If no search term is provided, the API returns an error.
+- Request:
+  - Method: `GET`
+  - Endpoint: `/posts/search?term=<searchTerm>`
+  - Query Parameter:
+    - `term`: The search term to filter posts by title, content, or category.
+  - Example:
+    - `/posts/search?term=JavaScript`
+
+- Response:
+  - Success (200): Returns a list of posts that match the search term.
+    ```json
+    [
+      {
+        "id": 1,
+        "title": "JavaScript Tutorial",
+        "content": "Learn JavaScript with this tutorial.",
+        "category": "Programming",
+        "tags": ["JavaScript", "Web Development"],
+        "createdAt": "2024-11-21 23:26:12",
+        "updatedAt": "2024-11-21 23:26:12"
+      }
+    ]
+    ```
+
 ### 4. Get a Specific Post (GET /posts/:id)
 - Description: Retrieve details of a specific post using its ID.
 - Request:
